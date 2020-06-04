@@ -30,13 +30,13 @@ export default {
         },
         body: JSON.stringify({ address, message, signature }),
       })).text();
-      await (await fetch('https://test.league.aeternity.org/some/endpoint', {
+      await fetch('https://test.league.aeternity.org/some/endpoint', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({ token }),
-      }));
+      });
       window.location = 'https://test.league.aeternity.org/broadcast';
     },
   },
