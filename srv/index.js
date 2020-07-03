@@ -7,7 +7,7 @@ import { sign } from 'jsonwebtoken';
 import fetch from 'node-fetch';
 import cors from 'cors';
 
-const messageRegExp = /^I would like to generate JWT token at (?<date>.*)$/;
+const messageRegExp = /^I would like to generate JWT at (?<date>.*)$/;
 const middlewareUrl = 'https://mainnet.aeternity.io';
 
 class ExpressError extends Error {
