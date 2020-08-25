@@ -66,7 +66,9 @@ export default (app, http) => {
         context: {
           user: {
             avatar: `https://robohash.org/${address}`,
-            name
+            name,
+            names,
+            address
           }
         },
         aud: 'aeternity-jitsi',
